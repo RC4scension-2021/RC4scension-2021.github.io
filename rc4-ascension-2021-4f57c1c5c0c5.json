@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rc4-ascension-2021",
+  "private_key_id": "4f57c1c5c0c570c9cac9c1a644c1f51e2c5844ae",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDs4U/HxUpAkRF6\na/cfXWCtOwzI3rLADTT4adaxVnvjtKDabAY3IYMs5DEspo8Iy5ZQIFa9P0CjzDZ0\n2f15ule6cltGZGWRIo/ot8/PwcjikMS01O6gIG2+cGdwXo1m6MNneEKCfHobKM0t\nYl2rNLiqS+nMwNRHhtCV39WraW5VviTUnbnfCZsBzClVtXmgDDt8gChz1yLSo3Qk\nyHHqJr/8r1IChOff2ujSYbSryHF0I3hAlOzNbybrMtI/VRjuQJcFhM2ltf2PscO/\nLXL5EgdB2c6gP5e+vrco88k3R+Urxb4rDlyI301E1hR1jWibhPdDiDfN4x6nCa9/\nph2BlOORAgMBAAECggEAFXA5o4RgOUi7Beyu8G7a8lxCRqaB4GGYAvvqAaHCOg3Q\n2WozNwEe8v/YakiZ8GG9W5VM4Sxpoe/Ry+PAwSgTixz3bf7/HDjX2mfsWsqyIiMx\n0lKx7nPdsTS3sxLm0qkyEI0kEKHJ/hqqux1IcFeORC3CERUwmr3OTSPCN3tZKeql\n4GO8bmEHPVXglAjFchkyn61z7NDxXLZZ66wnSU39pTrsM7UgxvWsYe2bm0+bU95X\ncXysZHQT1fxmSMEkfgcuSUY/1jylZS7oFQxaKQYPU/zdsZXBLawNt2sEuw4vlL42\nT0KGutKQxIibNHYjTFR7xl67a0tEMkwjq9ZKkwac8wKBgQD49ZiG6vDZnaRCykJj\nvqDBaKGnHi4s/I2ycUVXrD+cYr1X9wOPtow5xpGE4JjyA8imWlZ/rcYzVWQe24J5\nd2QXrrF79aqWQjZB3XF6o0mAHJm0ujXhbS2O6eu1+k85U8eH/dXess5FGAwgcqm6\n+GqujUhc8Tp/14YyLbopXQNfmwKBgQDzlEPhcqi2nq5m87yr2TwShL15XlLiskT/\nxRNM5sm6Iwrxo+V05xeUF5Vnh+N34eqoQ+OlnIeqk2tKJOfwIzVGPUFkSUm0cEC0\n3Gtvk553JeXnhxT7qf1CJfU4awX2lqS5VKwmcAsIcmiRUjD32WrGRe5/Rx2VFoiE\n5VA2KBl6QwKBgC0dNDqesG5+5plD1awFi1QBBeomye9VBMhlRk+Q4yYProgWNwr/\n5YFCvnP5zz1r+hxLGomgj94Vh0MgPBCO1hCEk50G85avAO4Glt3GYTdZ93CMnd7v\nzeWr9g7QATM+P1YhZXQpqr9SkEABB0jeY1amO4q8HAG2qJbHOojsVgQpAoGBAKHi\nFAstzPsyEu7RZr8/rTERj2uuSJ/povnp3J3rdH6E860NJF7Bh2YhFmasZX0zZGVY\nWV+j3HZ9a3znck6i17FK3L7uBlIpmJebNrv8/ABr65QorsVjgLIJ0CQi3N+51thl\ncdRJ+ssuXljWqzzN/qyvpYZpmTuQskLAtMKJfAVJAoGAYHEJXfcZGY9VApT9ezh4\nGKsQVPeSuWwJlkmKu11BAsVDzefPdZO5an0iZcPtfFkyzvKKL2nVwhMxvD+9DYQz\nKtpEFiNdaUdLBSLK2Jm2dNkRA+lkcVotP3A9BxPbkehkFNNtd+Z2dNhmUg5aCFJe\nlvlOOEc2KCDfcVxG6oNFHu0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "rc4-ascension-2021@appspot.gserviceaccount.com",
+  "client_id": "101804119266927173257",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rc4-ascension-2021%40appspot.gserviceaccount.com"
+}

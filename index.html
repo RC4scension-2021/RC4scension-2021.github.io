@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Honeycomb Grid Layout In Pure CSS</title>
+	<link rel="stylesheet" href="css.css">
+    <style>
+        h1 {
+            color: white
+        }
+        h2 {
+            color: rgb(58, 57, 57)
+        }
+    </style>
+</head>
+<body>
+
+<h1><center>ASCENSION</center></h1>
+<h2><center>RC4 Freshmen Orientation Camp 2021</center></h2>
+<br/>
+<br/>
+
+<ul class="honeycomb">
+    <li class="honeycomb-cell" onclick="location.href = 'zeusProfile.html' ">
+        <img class="honeycomb-cell_img" src="img/Greek_Aquila.jpg">
+        <div class="honeycomb-cell_title">Zeus</div>
+    </li>
+    <li class="honeycomb-cell" onclick="location.href = 'egyptianProfile.html' ">
+        <img class="honeycomb-cell_img" src="img/Egyptian_Noctua.jpg">
+        <div class="honeycomb-cell_title">Amun-Ra</div>
+    </li>
+    <li class="honeycomb-cell" onclick="location.href = 'mayanProfile.html' ">
+        <img class="honeycomb-cell_img" src="img/Mayan_Ursa.jpg">
+        <div class="honeycomb-cell_title">Itzamna</div>
+    </li>
+    <li class="honeycomb-cell" onclick="location.href = 'romanProfile.html' ">
+        <img class="honeycomb-cell_img" src="img/Roman_Leo.jpg">
+        <div class="honeycomb-cell_title">Jupiter</div>
+    </li>
+    <li class="honeycomb-cell" onclick="location.href = 'norseProfile.html' ">
+        <img class="honeycomb-cell_img" src="img/Norse_Draco.jpg">
+        <div class="honeycomb-cell_title">Odin</div>
+    </li>
+    <li class="honeycomb-cell honeycomb_Hidden">
+    </li>
+</ul>
+<ul class="honeycomb">
+    <li class="honeycomb-cell honeycomb_Hidden">
+    </li>
+    <li class="honeycomb-cell" onclick="location.href = 'ascensionProfile.html' ">
+        <img class="honeycomb-cell_img" src="img/work-6.jpg">
+        <div class="honeycomb-cell_title">ASCENSION<small>RC4 Freshmen Orientation Camp</small></div>
+    </li>
+    <li class="honeycomb-cell" onclick="location.href = 'mainQuest.html' ">
+        <img class="honeycomb-cell_img" src="img/work-7.jpg">
+        <div class="honeycomb-cell_title">Main Quest<small>Live Updates</small></div>
+    </li>
+    <li class="honeycomb-cell" onclick="location.href = 'memory.html' ">
+        <img class="honeycomb-cell_img" src="img/work-7.jpg">
+        <div class="honeycomb-cell_title">Down Memory Lane<small>Ascension</small></div>
+    </li>
+    <li class="honeycomb-cell honeycomb_Hidden">
+    </li>
+</ul>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD6dPtdnSg2Im_5CyAFuUKB-rR9tF8zfPw",
+    authDomain: "rc4-ascension-2021.firebaseapp.com",
+    projectId: "rc4-ascension-2021",
+    storageBucket: "rc4-ascension-2021.appspot.com",
+    messagingSenderId: "463448717557",
+    appId: "1:463448717557:web:5ca0eaf3ad5bc62a232dbc",
+    measurementId: "G-YMNFSD28V4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  var db = firebase.firestore();
+
+    // for (let i = 1; i <= 30; i++) {
+    // console.log("gasdhj")
+    // db.collection("grid-owners").doc("grid-" + i).set({
+    //     'grid-colour': ""
+    // })
+    // .then(() => {
+    //     console.log("Document successfully written!");
+    // })
+    // .catch((error) => {
+    //     console.error("Error writing document: ", error);
+    // });
+    // }
+</script>
+
+<script src="js/index.js" type='text/javascript'></script>
+
+
+
+</body>
+</html>
