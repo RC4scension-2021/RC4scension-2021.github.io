@@ -1,5 +1,6 @@
 $glass:linear-gradient(to right,#f7f7f7, #A2B9C4,#A5C4D4,#A5C4D4 ,#A2B9C4,#f7f7f7);
 $gold:linear-gradient(to right,#CCA951,#FFD166,#CCA951);
+
 body {
   background:#64A6BD;
 }
