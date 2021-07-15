@@ -1,0 +1,608 @@
+/* algemen stijlen */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style: none;
+    font-family: "Roboto", Arial, sans-serif;
+  }
+  
+  h1 {
+    margin-top: 2vh;
+    color: white;
+  }
+  
+  body {
+    background-color: #05182d;
+  }
+  
+  @-webkit-keyframes backgroundAnimate {
+    from {
+      left: 0;
+      top: 0;
+    }
+    to {
+      left: -10000px;
+      top: -2000px;
+    }
+  }
+  
+  @-moz-keyframes backgroundAnimate {
+    from {
+      left: 0;
+      top: 0;
+    }
+    to {
+      left: -10000px;
+      top: -2000px;
+    }
+  }
+  
+  @-o-keyframes backgroundAnimate {
+    from {
+      left: 0;
+      top: 0;
+    }
+    to {
+      left: -10000px;
+      top: -2000px;
+    }
+  }
+  
+  @keyframes backgroundAnimate {
+    from {
+      left: 0;
+      top: 0;
+    }
+    to {
+      left: -10000px;
+      top: -2000px;
+    }
+  }
+  
+  #back {
+    background: url(http://www.tranexnet.com/img/back.png) repeat 20% 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    z-index: -1;
+    -webkit-animation-name: backgroundAnimate;
+    -webkit-animation-duration: 500s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: backgroundAnimate;
+    -moz-animation-duration: 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-name: backgroundAnimate;
+    -o-animation-duration: 500s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+    animation-name: backgroundAnimate;
+    animation-duration: 500s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  #front {
+    background: url(http://www.tranexnet.com/img/front.png) repeat 35% 35%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+    z-index: -1;
+    -webkit-animation-name: backgroundAnimate;
+    -webkit-animation-duration: 300s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: backgroundAnimate;
+    -moz-animation-duration: 300s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-name: backgroundAnimate;
+    -o-animation-duration: 300s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+    animation-name: backgroundAnimate;
+    animation-duration: 300s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  /* navigatie testjes */
+  
+  .navigation {
+    background-color: #772c2c;
+    text-align: center;
+    height: 13vh;
+    width: 100%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  #tip-btn {
+    position: fixed;
+    top: 3.5vh;
+    right: 3vw;
+    height: 5vh;
+    width: 5vh;
+    background-image: url(./files/images/help.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #808080;
+    border-radius: 50%;
+  }
+  
+  #tip-btn:hover {
+    cursor: pointer;
+    background-color: rgb(182, 182, 182);
+    background-image: url(./files/images/help-white.svg);
+  }
+  
+  #tip-location {
+    position: fixed;
+    top: 2vh;
+    left: 3vw;
+    height: 8vh;
+    width: 20%;
+    max-height: 80px;
+    overflow: auto;
+  }
+  
+  #timer {
+    font-size: 11vh;
+  }
+  
+  .navigation ul {
+    width: 40%;
+    margin-left: 30%;
+  }
+  
+  .navigation li {
+    float: left;
+    width: 15%;
+    margin: 2.5%;
+    margin-top: 2vh;
+    height: 6vh;
+    background-color: #808080;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 0.75vh;
+    font-size: 20pt;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.089);
+  }
+  
+  .navigation li:hover {
+    cursor: pointer;
+    background-color: rgb(99, 99, 99);
+  }
+  
+  /* testform stijlen */
+  
+  #loginForm h1 {
+    text-align: center;
+  }
+  
+  form {
+    border: 1px solid black;
+    outline: 12px solid #4d4d4d;
+    width: 20%;
+    margin-top: 6vh;
+    margin-left: 40%;
+    padding: 5px;
+    padding-top: 10px;
+    background-color: #772c2c;
+    box-shadow: 0 0 14px 14px rgba(0, 0, 0, 0.199);
+    text-align: left;
+  }
+  
+  label {
+    margin: 5% 0 5% 5%;
+    color: rgb(238, 238, 238);
+  }
+  
+  input {
+    border: 1px solid black;
+    padding: 5%;
+    margin: 5%;
+    width: 70%;
+    border-radius: 2px;
+    background-color: rgb(206, 206, 206);
+  }
+  
+  .code {
+    width: 15%;
+    float: left;
+  }
+  
+  form p {
+    background-color: #a9a9a9;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+    margin: 5%;
+    width: 30%;
+    font-size: 70%;
+    overflow: hidden;
+  }
+  
+  form p:hover {
+    background-color: rgb(99, 99, 99);
+    color: white;
+  }
+  
+  /* footer met bolletjes stijlen */
+  
+  #footer {
+    bottom: 0;
+    width: 100%;
+    height: 12vh;
+    background-color: #772c2c;
+    position: fixed;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.205);
+  }
+  
+  #footer h1 {
+    margin: 0;
+    color: black;
+    padding-top: 3vh;
+    padding-left: 20%;
+    float: left;
+  }
+  
+  #footer p {
+    width: 8vh;
+    height: 8vh;
+    margin-top: 2vh;
+    margin-left: 5%;
+    background-color: red;
+    border: 3px solid black;
+    border-radius: 50%;
+    float: left;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.171);
+  }
+  
+  #footer button {
+    width: 6vw;
+    position: fixed;
+    height: 4vh;
+    margin-top: 4vh;
+    right: 5vw;
+    border-radius: 3px;
+    background-color: darkgrey;
+  }
+  
+  #footer button:hover {
+    cursor: pointer;
+    background-color: rgb(99, 99, 99);
+  }
+  
+  /* specials */
+  
+  .testform {
+    margin-top: 20vh;
+  }
+  
+  /* second coming */
+  #slow {
+    background-color: black;
+    color: green;
+    font-size: 14pt;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #slowbox {
+    margin: 20px 0 0 25vw;
+    background-color: black;
+    height: 60vh;
+    width: 50vw;
+    border: 12px solid grey;
+    position: relative;
+  }
+  
+  #slowbox:after {
+    content: "";
+    position: absolute;
+    top: -13px;
+    bottom: -13px;
+    left: -13px;
+    right: -13px;
+    background-color: black;
+    z-index: -1;
+  }
+  
+  .second h1 {
+    margin: 2vw 0 0 43vw;
+    color: rgb(238, 238, 238);
+  }
+  
+  /* final page - desktop */
+  .wallpaper {
+    display: flex;
+    flex-direction: row;
+    height: 87vh;
+    background-image: url(files/images/wallpaper.jpg);
+    background-size: cover;
+  }
+  
+  .folder {
+    height: 8vh;
+    margin-top: 4vh;
+    margin-left: 1vw;
+    background-image: url(files/images/folder-closed.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    text-align: center;
+  }
+  
+  .folder:hover {
+    cursor: pointer;
+    background-color: rgba(170, 170, 170, 0.5);
+  }
+  
+  .phone {
+    background-image: url(files/images/phone.svg);
+  }
+  
+  .computer {
+    background-image: url(files/images/my-computer.svg);
+  }
+  
+  .folder p {
+    padding-top: 7vh;
+    font-family: sans-serif;
+    font-size: 10pt;
+    color: white;
+    text-shadow: 0px 1px 3px #808080, 0px -1px 3px #808080, 1px 0px 3px #808080,
+      -1px 0px 3px #808080;
+  }
+  
+  .desktop-footer {
+    background-color: rgb(8, 106, 233);
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    box-shadow: 0 0 2px 2px rgba(4, 131, 204, 0.336);
+  }
+  
+  #windows-logo img {
+    height: 4vh;
+    margin: 1vh;
+    background-color: darkblue;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+  
+  #time-display {
+    z-index: 2;
+    padding-left: 90vw;
+    padding-top: 1.5vh;
+    color: white;
+  }
+  
+  #diary-window {
+    background-color: white;
+    top: 10vh;
+    left: 30vw;
+    position: relative;
+    height: 50vh;
+    width: 40vw;
+    overflow: auto;
+    border-top: 14px solid #a9a9a9;
+    padding: 20px;
+    outline: 1px solid black;
+    outline-offset: 0px;
+    box-shadow: 0 0 3px 2px #2c2c2c;
+  }
+  
+  #diary-text {
+    text-align: justify;
+  }
+  
+  #imagebox {
+    background-color: white;
+    top: 5vh;
+    left: 10vw;
+    position: relative;
+    height: 70vh;
+    width: 70vw;
+    overflow: auto;
+    border-top: 14px solid #a9a9a9;
+    padding: 20px;
+    outline: 1px solid black;
+    outline-offset: 0px;
+    box-shadow: 0 0 3px 2px #2c2c2c;
+  }
+  
+  #imagebox img {
+    width: 32%;
+  }
+  
+  #phonebox {
+    background-color: white;
+    top: 10vh;
+    left: 30vw;
+    position: relative;
+    height: 30vh;
+    width: 17vw;
+    overflow: auto;
+    border-top: 14px solid #a9a9a9;
+    padding: 20px;
+    outline: 1px solid black;
+    outline-offset: 0px;
+    box-shadow: 0 0 3px 2px #2c2c2c;
+  }
+  
+  #pincode,
+  #mycomputer-form {
+    border-radius: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  
+  #phonebox input {
+    width: 2vw;
+    padding: 0;
+    padding-left: 5%;
+    margin: 0;
+    height: 20%;
+    background-color: white;
+    border-radius: none;
+  }
+  
+  #mycomputer-form input {
+    width: 70%;
+    padding: 0;
+    padding-left: 5%;
+    margin: 0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: white;
+    border-radius: none;
+  }
+  
+  #mycomputer-form label {
+    color: black;
+  }
+  
+  #mycomputer-test {
+    background-color: white;
+    top: 14vh;
+    left: 26vw;
+    position: relative;
+    height: 50vh;
+    width: 40vw;
+    overflow: auto;
+    border-top: 14px solid #a9a9a9;
+    padding: 20px;
+    outline: 1px solid black;
+    outline-offset: 0px;
+    box-shadow: 0 0 3px 2px #2c2c2c;
+  }
+  
+  #mydevice,
+  #myphone {
+    background-color: white;
+    top: 10vh;
+    left: 19vw;
+    position: relative;
+    height: 45vh;
+    width: 30vw;
+    overflow: auto;
+    border-top: 14px solid #a9a9a9;
+    padding: 20px;
+    outline: 1px solid black;
+    outline-offset: 0px;
+    box-shadow: 0 0 3px 2px #2c2c2c;
+  }
+  
+  #myphone {
+    height: 25vh;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  caption {
+    font-weight: bold;
+  }
+  
+  #opgelost {
+    position: fixed;
+    top: 3vh;
+    right: 10vw;
+    width: 30vw;
+  }
+  
+  #opgelost span {
+    min-width: 30%;
+    margin-top: 1.75vh;
+    float: left;
+    clear: none;
+  }
+  #opgelost input {
+    height: 5vh;
+    margin: auto;
+    margin-left: 5px;
+    min-width: 5vw;
+    width: 15vw;
+    float: left;
+    clear: none;
+  }
+  
+  #opgelost button {
+    height: 5vh;
+    margin: auto;
+    margin-top: 0.8vh;
+    margin-left: 5px;
+    min-width: 5vw;
+    background-color: #808080;
+    border-radius: 3px;
+    float: left;
+    clear: none;
+  }
+  
+  #opgelost button:hover {
+    cursor: pointer;
+  }
+  
+  #boodschap {
+    position: fixed;
+    background-color: white;
+    top: 35vh;
+    left: 35vw;
+    width: 30vw;
+    height: 30vh;
+    overflow: auto;
+    border-top: 14px solid #a9a9a9;
+    padding: 20px;
+    outline: 1px solid black;
+    outline-offset: 0px;
+    box-shadow: 0 0 3px 2px #2c2c2c;
+  }
+  
+  #boodschap button {
+    background-color: #a9a9a9;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+    margin: 9%;
+    width: 30%;
+    font-size: 70%;
+    overflow: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

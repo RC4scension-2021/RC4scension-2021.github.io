@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-en">
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KLDTJZN"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150986194-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-150986194-2');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KLDTJZN');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Flor Verhellen">
+  <meta name="keywords" content="escape room">
+  <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">
+  <title>Secret!</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./files/images/favicon.png" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+      "<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLDTJZN" height="0" width="0"
+      style="display:none; visibility:hidden"></iframe>"
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="back"></div>
+  <div id="front"></div>
+  <div class="navigation">
+    <p id="tip-location">TIP <span id="tip-text">: press the '?' icon in the upper right corner to receive a tip</span>
+    </p>
+    <span id="timer">60:00</span>
+    <button id="tip-btn"></button>
+    <h1 id="title1" class="hidden">5-step authentication</h1>
+    <ul id="nav" class="hidden">
+      <li id="test1">L</li>
+      <li id="test2">C</li>
+      <li id="test3">N</li>
+      <li id="test4">C</li>
+      <li id="test5">M</li>
+    </ul>
+  </div>
+  <!-- ATTENTION: You don't need code to solve the escape room! Please leave the source code now to avoid spoilers!-->
+  <!-- ATTENTION: You don't need code to solve the escape room! Please leave the source code now to avoid spoilers!-->
+  <!-- ATTENTION: You don't need code to solve the escape room! Please leave the source code now to avoid spoilers!-->
+  <!-- ATTENTION: You don't need code to solve the escape room! Please leave the source code now to avoid spoilers!-->
+  <!-- ATTENTION: You don't need code to solve the escape room! Please leave the source code now to avoid spoilers!-->
+  <!-- ATTENTION: You don't need code to solve the escape room! Please leave the source code now to avoid spoilers!-->
+  <!-- ATTENTION: You don't need code to solve the escape room! Please leave the source code now to avoid spoilers!-->
+  <!-- ATTENTION: You don't need code to solve the escape room! Please leave the source code now to avoid spoilers!-->
+  <!-- ATTENTION: You don't need code to solve the escape room! Please leave the source code now to avoid spoilers!-->
+  <div id="root">
+    <div id="loginForm">
+      <h1>LOG IN</h1>
+      <form>
+        <label for="login">Username</label>
+        <br>
+        <input type="text" id="login" name="username" maxlength="30">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" id="password" name="password" maxlength="30">
+        <p id="submit">SUBMIT</p>
+      </form>
+    </div>
+
+    <div id="form1" class="testform hidden">
+      <form id="test1form">
+        <label for="hoogte">N:</label>
+        <input type="text" id="hoogte" name="hoogte" maxlength="30"><br>
+        <label for="breedte">W:</label>
+        <input type="text" id="breedte" name="lname" maxlength="30">
+        <p id="test1submit">SUBMIT</p>
+      </form>
+    </div>
+
+    <div id="form2" class="testform hidden">
+      <form id="test2form">
+        <label for="r">R:</label>
+        <input type="text" id="r" name="r" maxlength="10"><br>
+        <label for="g">G:</label>
+        <input type="text" id="g" name="g" maxlength="10"><br>
+        <label for="b">B:</label>
+        <input type="text" id="b" name="b" maxlength="10">
+        <p id="test2submit">SUBMIT</p>
+      </form>
+    </div>
+
+    <div id="form3" class="testform hidden">
+      <form id="test3form">
+        <label for="natuur">"Natura non constristatur."</label><br>
+        <input type="text" id="natuur" name="natuur" maxlength="30"><br>
+        <input type="text" name="placeholder" class="hidden"><br>
+        <p id="test3submit">SUBMIT</p>
+      </form>
+    </div>
+
+    <div id="form4" class="testform hidden">
+      <form id="test4form">
+        <input type="text" id="code1" name="code" class="code" maxlength="1">
+        <input type="text" id="code2" name="code" class="code" maxlength="1">
+        <input type="text" id="code3" name="code" class="code" maxlength="1">
+        <input type="text" id="code4" name="code" class="code" maxlength="1">
+        <p id="test4submit">SUBMIT</p>
+      </form>
+    </div>
+
+    <div id="form5" class="testform hidden">
+      <form id="test5form">
+        <input value="leave" id="morse" class="hidden">
+        <p id="play">Play</p>
+        <input type="text" id="morsecode" name="morsecode" maxlength="30">
+        <p id="test5submit">SUBMIT</p>
+      </form>
+    </div>
+
+    <div id="footer" class="hidden">
+      <h1>TOP SECRET</h1>
+      <p id="light1"></p>
+      <p id="light2"></p>
+      <p id="light3"></p>
+      <p id="light4"></p>
+      <p id="light5"></p>
+      <button id="nextpage" class="hidden">ENTER</button>
+    </div>
+  </div>
+  <div id="second" class="second hidden">
+    <h1 id="welcome" class="welcome">
+      "Welcome back"
+      <span id="pressable">T</span>
+    </h1>
+    <div id="slowbox">
+      <p id="slow"></p>
+    </div>
+    <div id="desktop-full" class="hidden">
+      <div class="desktop">
+        <div class="folder" id="folder1">
+          <p>Diary</p>
+        </div>
+        <div class="folder" id="folder2">
+          <p>Images</p>
+        </div>
+        <div class="folder phone" id="phone">
+          <p>My phone</p>
+        </div>
+        <div class="folder computer" id="computer">
+          <p>My computer</p>
+        </div>
+      </div>
+
+      <div class="desktop-footer">
+        <div id="windows-logo">
+          <img src="files/images/logo.svg" alt="" />
+        </div>
+        <p id="time-display">00:00</p>
+      </div>
+    </div>
+    <div id="sticky">
+      <div id="diary-window" class="hidden">
+        <div id="diary-text">
+          <p>
+          <h2>My Murder Diary</h2>
+          </br>
+          <h3>02/02/2020</h3> </br>
+          <p>Today was exciting. Trying to kill Victim 1. Hopefully I'll reach my target of 5 murders to complete the
+            pentagon. Let's start with someone I hate. Saw them walking down the street right away. Panicked, had to
+            kidnap her. She screamed out loud. I had to cut off her head. Cut her up and scattered her in the woods on
+            the other side of town. Hopefully the foxes will solve my problem. Saw poppy tattooed on her hand, might
+            become my symbol. Every good killer has a symbol.</p>
+          </br>
+          <h3>12/02/2020</h3></br>
+          <p>Victim 2 died today. Helped me out by walking down a lonely street. He never saw me coming. Had to hide
+            behind a van and attacked him from the back. Subsequently a car arrived so I had to flee quickly. Had just
+            enough time to leave the poppy in his mouth. The second corner is now complete!</p>
+          </br>
+          <h3>17/02/2020</h3></br>
+          <p>Today was very risky. Still haven't recovered. Under the guise of my profession rang the doorbell
+            somewhere. Victim wouldn't let me in and resisted hard. I hurt my foot a lot. Couldn't even use my weapon as
+            i normally would. She made a lot of noise so I had to flee before I could finish her off. Hope she's dead
+            anyway. Guess neighbor saw me, had to leave the flowers quickly.</p>
+          </br>
+          <h3>02/03/2020
+          </h3></br>
+          <p>Got someone again today! This one was very important, hate him with a passion. Coincidentally, I ran into
+            him at the supermarket. So I quickly walked to my car and got my hammer. I went to hide behind his car but
+            the door wasn't locked, so I could hide in the back seat. I did lose my backpack with spare laptop somewhere
+            today, hopefully it won't fall into bad hands. Flower also ended up on the back seat instead of the mouth,
+            too bad. Only one more murder to go and can finally complete my goal!</p>
+          </br>
+          <h3>01/04/2020</h3></br>
+          <p>Last victim today. Wanted to make sure it was a spectacle. Had to wait a long time. I'm very proud. Someone
+            random again but it turned out nicely. Mission accomplished! Don't know if I'm gonna be able to stop
+            forever, but for now I'm putting an end to it. Risk too big! Time to go home and complete the ritual. With
+            Satan by my side, I will become the most powerful man on Earth! Revenge at last!</p>
+          </p>
+        </div>
+      </div>
+      <div id="imagebox" class="hidden">
+        <h3>Holiday Pictures</h3>
+        <img src="files/images/1.JPG" alt="">
+        <img src="files/images/2.JPG" alt="">
+        <img src="files/images/3.JPG" alt="">
+        <img src="files/images/4.JPG" alt="">
+        <img src="files/images/5.JPG" alt="">
+        <img src="files/images/6.jpg" alt="">
+        <img src="files/images/7.jpg" alt="">
+        <img src="files/images/8.jpg" alt="">
+        <img src="files/images/9.jfif" alt="">
+        <img src="files/images/10.jpg" alt="">
+        <img src="files/images/11.jpg" alt="">
+        <img src="files/images/12.jpg" alt="">
+      </div>
+      <div id="phonebox" class="hidden">
+        <form id="pincode">
+          <h3>PINCODE</h3> </br>
+          <input type="password" id="pin1" name="pin" class="pin" maxlength="1" />
+          <input type="password" id="pin2" name="pin" class="pin" maxlength="1" />
+          <input type="password" id="pin3" name="pin" class="pin" maxlength="1" />
+          <input type="password" id="pin4" name="pin" class="pin" maxlength="1" />
+          <input type="password" id="pin5" name="pin" class="pin" maxlength="1" />
+          </br></br>
+          <p id="pinsubmit">SUBMIT</p>
+        </form>
+      </div>
+      <div id="myphone" class="hidden">
+        <table id="myphoneform">
+          <caption rowspan="2">My device</caption>
+          <tr>
+            <td>Device:</td>
+            <td>iPhone 7</td>
+          </tr>
+          <tr>
+            <td>ID:</td>
+            <td>04478579++5662656++98</td>
+          </tr>
+          <tr>
+            <td>Number:</td>
+            <td>+1-202-555-0147</td>
+          </tr>
+          <tr>
+            <td>Latest text:</td>
+            <td id="tokenText"></td>
+          </tr>
+        </table>
+      </div>
+      <div id="mycomputer-test" class="hidden">
+        <form id="mycomputer-form">
+          <h3>Press 'send' to recieve your personal authentication code!</h3>
+          <p id="auth-code">SEND</p>
+          <h4 id="message" class="hidden">The message has been sent to your phone number!</h4></br>
+          <label for="token">Token:</label>
+          <input type="text" id="token" name="token" maxlength="6"><br />
+          <input type="text" name="placeholder" class="hidden"><br />
+          <p id="auth">VALIDATE</p>
+        </form>
+      </div>
+      <div id="mydevice" class="hidden">
+        <table>
+          <caption rowspan="2">My device</caption>
+          <tr>
+            <td>Type:</td>
+            <td>Laptop</td>
+          </tr>
+          <tr>
+            <td>Processor:</td>
+            <td>Intel® Core™ i7-4710HQ Processor</td>
+          </tr>
+          <tr>
+            <td>Ram:</td>
+            <td>16GB</td>
+          </tr>
+          <tr>
+            <td>OS Name:</td>
+            <td>Windows 10 x86</td>
+          </tr>
+          <tr>
+            <td>OS Name:</td>
+            <td>Windows 10 x86</td>
+          </tr>
+          <tr>
+            <td>Version:</td>
+            <td>10.225785.254</td>
+          </tr>
+          <tr>
+            <td>Device ID:</td>
+            <td>8F4F7E3B-9BB4-41F2-BCB6-631D7E56EE2A</td>
+          </tr>
+          <tr>
+            <td>System ID:</td>
+            <td id="moordenaar"></td>
+          </tr>
+        </table>
+
+      </div>
+      <div id="opgelost" class="hidden">
+        <span for="suspect">Make your guess!</span>
+        <input name="suspect" id="suspect" type="text" maxlength="50">
+        <button id="nameSubmit">SUBMIT</button>
+      </div>
+      <div id="boodschap" class="hidden">
+        <h3 id="tijd-op" class=hidden>Unfortunately, your time is up... do you want to continue playing or go back to
+          the main menu?</h3>
+        <h3 id="gewonnen" class="hidden">Congratulations! You found the killer! Thanks for playing!</h3>
+        <h3 id="verloren" class="hidden">Wrong! Do you want to continue playing or return to main menu?</h3>
+        <button id="verder" class="hidden">CONTINUE</button>
+        <a href="index.html#bot"><button id="terug">BACK</button></a>
+      </div>
+    </div>
+    <div id="add">
+    </div>
+    <!-- ATTENTION: You don't need code to solve the escape room! Please leave the source code now to avoid spoilers!-->
+    <script type="module" src="main.js"></script>
+    <script src="morse.js"></script>
+</body>
+
+</html>

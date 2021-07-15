@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style: none;
+    font-family: "Roboto", Arial, sans-serif;
+  }
+  
+  body {
+    background-color: rgba(238, 238, 238, 0.89);
+    text-align: center;
+  }
+  
+  .nav {
+    margin-top: 0;
+    width: 100%;
+    height: 12vh;
+    background-color: rgba(36, 30, 30, 0.726);
+    position: static;
+    z-index: 2;
+  }
+  
+  .top {
+    background-image: url(./files/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    width: 100%;
+    transition: top 0.3s;
+    position: fixed;
+  }
+  
+  .main {
+    background-color: rgba(238, 238, 238, 0.288);
+    position: relative;
+    padding: 5vh 5vw 1vh 5vw;
+    top: 70vh;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.459);
+    z-index: 0;
+  }
+  
+  .second {
+    padding: 5vh 5vw;
+  }
+  
+  h1 {
+    color: rgb(146, 108, 27);
+    font-size: 6vh;
+  }
+  
+  h2 {
+    color: rgb(146, 108, 27);
+    font-size: 3vh;
+  }
+  
+  h3 {
+    color: rgb(146, 108, 27);
+  }
+  
+  #story {
+    background-color: rgb(206, 206, 206);
+    border: 2px solid black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.13);
+    margin-left: 20vw;
+    width: 50vw;
+    padding: 10px;
+  }
+  
+  #ruleset {
+    background-color: rgba(206, 206, 206, 0.815);
+    border: 2px solid black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.13);
+    margin-left: 20vw;
+    height: 57vh;
+    width: 50vw;
+    display: flex;
+  }
+  
+  #expl {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(36, 30, 30);
+  }
+  
+  #expl p {
+    color: white;
+  }
+  
+  #rules {
+    width: 100%;
+    transition: 3s;
+    padding: 10px;
+  }
+  
+  ul {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  button {
+    background-color: rgba(255, 255, 255, 0.822);
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 2vh;
+    border: 2px solid rgb(39, 39, 39);
+    transition: 0.3s;
+    min-width: 60px;
+    min-height: 40px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: rgb(151, 151, 151);
+  }
+  
+  #footer {
+    bottom: 0;
+    left: 42vw;
+  }
+  
+  #ruleset p {
+    padding-top: 20px;
+  }
+  
+  #footer p {
+    padding-top: 3vh;
+  }
+  
+  li {
+    padding-top: 5px;
+  }
+  
+  a {
+    color: rgb(255, 255, 255);
+  }
+  
+  #add {
+    position: fixed;
+    right: 0;
+    top: 25vh;
+    background-color: white;
+  }
+  
+  #regelbtn {
+    width: 20%;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .nav {
+      height: 20vh;
+    }
+    #ruleset {
+      margin-left: 0;
+      width: 100%;
+      height: unset;
+    }
+    button {
+      width: 20vw;
+      height: 7vh;
+    }
+    #ruleset {
+      flex-direction: column;
+    }
+    #rules {
+      width: 100%;
+    }
+    #story {
+      margin-left: 0;
+      width: 100%;
+    }
+    #review {
+      display: none;
+    }
+  }
+  
+  #review {
+    position: fixed;
+    top: 3vh;
+    right: 5vw;
+    color: white;
+  }
+  
